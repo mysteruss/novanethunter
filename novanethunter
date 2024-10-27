@@ -154,8 +154,8 @@ function check_dependencies() {
 
 
 function get_url() {
-    ROOTFS_URL="${BASE_URL}/${IMAGE_NAME}"
-    SHA_URL="${BASE_URL}/${SHA_NAME}"
+    ROOTFS_URL="https://old.kali.org/nethunter-images/kali-2024.2/rootfs/kalifs-arm64-full.tar.xz" 
+    SHA_URL="https://old.kali.org/nethunter-images/kali-2024.2/rootfs/kalifs-arm64-full.sha512sum"
 }
 
 function get_rootfs() {
