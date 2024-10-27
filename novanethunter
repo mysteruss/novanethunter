@@ -104,7 +104,7 @@ function set_strings() {
 
 
     CHROOT=chroot/kali-${SYS_ARCH}
-    IMAGE_NAME=kali-nethunter-rootfs-${wimg}-${SYS_ARCH}.tar.xz
+    IMAGE_NAME=kalifs-${wimg}-${SYS_ARCH}.tar.xz
     SHA_NAME=${IMAGE_NAME}.sha512sum
 }    
 
