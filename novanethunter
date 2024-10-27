@@ -111,7 +111,7 @@ function set_strings() {
 function prepare_fs() {
     unset KEEP_CHROOT
     if [ -d ${CHROOT} ]; then
-        if ask "Existing rootfs directory found. Delete and create a new one?" "N"; then
+        if ask "Existing rootfs directory found. Delete and create a new one?" "y"; then
             rm -rf ${CHROOT}
         else
             KEEP_CHROOT=1
@@ -121,7 +121,7 @@ function prepare_fs() {
 
 function cleanup() {
     if [ -f "${IMAGE_NAME}" ]; then
-        if ask "Delete downloaded rootfs file?" "N"; then
+        if ask "Delete downloaded rootfs file?" "y"; then
         if [ -f "${IMAGE_NAME}" ]; then
                 rm -f "${IMAGE_NAME}"
         fi
